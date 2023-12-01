@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Review Rating Predictor</title>
+</head>
+<body>
+    <h2>Enter a Review</h2>
+    <form action="/predict/" method="post">
+        <textarea name="review" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Predict Rating">
+    </form>
+    {% if prediction %}
+        <h3>Predicted Rating: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
