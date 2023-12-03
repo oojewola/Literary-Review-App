@@ -30,6 +30,7 @@ fqdn==1.5.1
 gensim==4.3.2
 gunicorn==21.2.0
 h11==0.14.0
+httptools
 idna==3.4
 isoduration==20.11.0
 itsdangerous==2.1.2
