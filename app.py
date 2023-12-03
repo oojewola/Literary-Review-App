@@ -15,13 +15,13 @@ warnings.filterwarnings('ignore')
 import uvicorn
 
 app = FastAPI()
-templates = Jinja2Templates(directory = '/Users/olusinaojewola/Desktop/flask/templates')
+templates = Jinja2Templates(directory = 'templates')
 
 #load the model
-with open("/Users/olusinaojewola/Desktop/flask/lr_model.pkl", "rb") as file : 
+with open("lr_model.pkl", "rb") as file : 
     model = pickle.load(file)
     
-with open("/Users/olusinaojewola/Desktop/flask/tfidf_vectorizer.pkl", 'rb') as file:
+with open("tfidf_vectorizer.pkl", 'rb') as file:
     tfidf_vectorizer = pickle.load(file)
 
 def preprocess(text):
