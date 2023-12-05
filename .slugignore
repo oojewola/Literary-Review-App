@@ -1,0 +1,10 @@
+*.log
+__pycache__/
+tests/
+docs/
+data/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite
