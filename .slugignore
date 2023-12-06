@@ -1,10 +1,7 @@
-*.log
 __pycache__/
-tests/
-docs/
-data/
 *.pyc
 *.pyo
 *.pyd
+*.log
 *.db
 *.sqlite
